@@ -1,0 +1,42 @@
+{
+  "name": "react-redux-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-node test.js",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-regenerator-runtime": "^6.5.0",
+    "chance": "^1.0.6",
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "query-string": "^4.3.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.15.3",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^2.5.4",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.4.0",
+    "redux-tool": "^1.0.0",
+    "webpack-dev-server": "^1.16.5"
+  }
+}
