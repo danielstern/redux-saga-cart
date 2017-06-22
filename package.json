@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "babel-node test.js",
-    "start": "webpack-dev-server"
+    "start": "babel-node server/server.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,8 @@
     "babel-regenerator-runtime": "^6.5.0",
     "chance": "^1.0.6",
     "classnames": "^2.2.5",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
     "immutable": "^3.8.1",
     "lodash": "^4.17.4",
     "query-string": "^4.3.4",
@@ -30,6 +32,7 @@
     "redux-saga": "^0.15.3",
     "redux-thunk": "^2.2.0",
     "reselect": "^2.5.4",
+    "socket.io": "^2.0.3",
     "webpack": "^1.13.3",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.17.1"
