@@ -1,0 +1,31 @@
+body {
+    background-color: #eee;
+}
+.container {
+    padding: 2em;
+    margin-top: 2em;
+    border: 1px solid #aaa;
+    border-radius: 1em;
+    background-color:#fefefe;
+}
+
+.product-image {
+    margin-right: 3em;
+    width: 82px;
+    height: 82px;
+    border: 1px solid #999;
+    border-radius: 6.18%;
+    background-color: sandybrown;
+}
+
+.checkout-button-container {
+    margin-bottom: 2em;
+}
+
+.item-quantity {
+    margin-right: 3em;
+}
+
+.total-tr {
+    font-size: 120%;
+}

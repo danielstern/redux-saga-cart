@@ -12,6 +12,7 @@ import thunk from 'redux-thunk'
 import { getQuery } from './utility'
 import { initSagas } from './initSagas';
 import { reducer } from './combineReducers';
+import { defaultState } from './defaultState'
 
 const stateTransformer = (state) => {
     if (Iterable.isIterable(state)) return state.toJS();
@@ -34,6 +35,7 @@ export const getStore = ()=>{
 );
     const store = createStore(
         reducer,
+        defaultState,
         enhancer,
     );
     initSagas(sagaMiddleware);
