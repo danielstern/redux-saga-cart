@@ -56,9 +56,11 @@ export const MainDisplay = ({})=>(
                     </button>
                 </div>
                 <section>
-                    <h5>
-                        Order Summary
-                    </h5>
+                    {/*<div className="text-center">*/}
+                        <h4>
+                            Order Summary
+                        </h4>
+                    {/*</div>*/}
                     <table className="table">
                         <tr>
                             <th>
@@ -68,9 +70,6 @@ export const MainDisplay = ({})=>(
                                 ${225.00}
                             </td>
                         </tr>
-                        {/*<tr>*/}
-                            {/*<td colSpan={2} className="divider"><hr /></td>*/}
-                        {/*</tr>*/}
                         <tr>
                             <th>
                                 Shipping
@@ -87,9 +86,6 @@ export const MainDisplay = ({})=>(
                                 ${19.95}
                             </td>
                         </tr>
-                        {/*<tr>*/}
-                            {/*<td colSpan={2} className="divider"><hr /></td>*/}
-                        {/*</tr>*/}
                         <tr className="total-tr">
                             <th>
                                 Total

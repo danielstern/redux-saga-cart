@@ -23,9 +23,18 @@ body {
 }
 
 .item-quantity {
-    margin-right: 3em;
+    margin-right: 1em;
 }
 
 .total-tr {
     font-size: 120%;
+}
+
+td {
+    text-align: right;
+    margin-right: 2em;
+}
+
+.table th {
+    padding-left: 0px;
 }
