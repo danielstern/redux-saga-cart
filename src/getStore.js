@@ -22,25 +22,9 @@ const logger = createLogger({
     stateTransformer,
 });
 
-import {
-     REQUEST_PLAYER_SELECT_MOVE
-} from './actions'
-const createUserSelectionMiddleware = ({onP1Move,onP2Move}) => store => next => action => {
-    if (action.type === REQUEST_PLAYER_SELECT_MOVE) {
-        const fn = action.pID === "GOLD" ? onP1Move : onP2Move;
-        fn({
-            board:store.getState().get(`board`),
-            makeSelection(n){
-                console.log("Made selection!");
-            }
-        })
-    }
-    return next(action);
-}
-export const getStore = ({onP1Move,onP2Move})=>{
+export const getStore = ()=>{
     const sagaMiddleware = createSagaMiddleware();
-    const userSelectionMiddleware = createUserSelectionMiddleware({onP1Move,onP2Move});
-    const middleWares = [sagaMiddleware,thunk,userSelectionMiddleware];
+    const middleWares = [sagaMiddleware,thunk];
     if (getQuery()['logger']) { middleWares.push(logger)}
     const composables = [applyMiddleware(...middleWares)
     //    , window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -48,7 +32,6 @@ export const getStore = ({onP1Move,onP2Move})=>{
     const enhancer = compose(
         ... composables
 );
-    console.log("Reducer?",reducer);
     const store = createStore(
         reducer,
         enhancer,
