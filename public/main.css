@@ -1,12 +1,12 @@
 body {
-    background-color: #eee;
+    background-color: #fefefe;
 }
 .container {
     padding: 2em;
     margin-top: 2em;
-    border: 1px solid #aaa;
-    border-radius: 1em;
-    background-color:#fefefe;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    background-color:#fff;
 }
 
 .product-image {
