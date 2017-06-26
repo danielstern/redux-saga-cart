@@ -1,8 +1,7 @@
 import { fromJS } from 'immutable'
 export const defaultState = fromJS({
     currentUser:null,
-    cartItems:[],
-    users:[],
+    cartItems:null,
     items:[],
     taxRates:[],
     shippingTotal:0,

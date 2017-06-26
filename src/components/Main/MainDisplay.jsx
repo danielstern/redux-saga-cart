@@ -1,5 +1,6 @@
 import React from 'react'
 import { UserInfoContainer } from '../UserInfo'
+import { CartItemListContainer } from '../CartItemList'
 export const MainDisplay = ({})=>(
     <div>
         <section className="row">
@@ -18,28 +19,29 @@ export const MainDisplay = ({})=>(
                     <h3>
                         Your Cart
                     </h3>
-                    <section className="cart-item">
-                        <section className="row">
-                            <section className="col-4">
-                                <img style={{backgroundColor:'chartreuse'}} className="product-image"/>
-                            </section>
-                            <section className="col-8">
-                                <h5>
-                                    Velvet Mousepad
-                                </h5>
-                                <article>
-                                    $75.45
-                                </article>
-                                <section>
-                                    <span className="item-quantity">
-                                        Quantity: {3}
-                                    </span>
-                                    <button type="button" className="btn btn-secondary" onClick={()=>{}}>-</button>
-                                    <button className="btn btn-secondary">+</button>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
+                    <CartItemListContainer/>
+                    {/*<section className="cart-item">*/}
+                        {/*<section className="row">*/}
+                            {/*<section className="col-4">*/}
+                                {/*<img style={{backgroundColor:'chartreuse'}} className="product-image"/>*/}
+                            {/*</section>*/}
+                            {/*<section className="col-8">*/}
+                                {/*<h5>*/}
+                                    {/*Velvet Mousepad*/}
+                                {/*</h5>*/}
+                                {/*<article>*/}
+                                    {/*$75.45*/}
+                                {/*</article>*/}
+                                {/*<section>*/}
+                                    {/*<span className="item-quantity">*/}
+                                        {/*Quantity: {3}*/}
+                                    {/*</span>*/}
+                                    {/*<button type="button" className="btn btn-secondary" onClick={()=>{}}>-</button>*/}
+                                    {/*<button className="btn btn-secondary">+</button>*/}
+                                {/*</section>*/}
+                            {/*</section>*/}
+                        {/*</section>*/}
+                    {/*</section>*/}
                 </section>
             </section>
             <section className="col-6">
