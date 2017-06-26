@@ -1,4 +1,5 @@
 import React from 'react'
+import { UserInfoContainer } from '../UserInfo'
 export const MainDisplay = ({})=>(
     <div>
         <section className="row">
@@ -12,15 +13,7 @@ export const MainDisplay = ({})=>(
         </section>
         <section className="row">
             <section className="col-6">
-                <section className="current-user">
-                    <p>
-                        JRR Hemingway
-                        <br/>
-                        555 La Rue Chermaine
-                        <br/>
-                        555-654-4444
-                    </p>
-                </section>
+                <UserInfoContainer/>
                 <section className="cart-items">
                     <h3>
                         Your Cart
@@ -62,38 +55,40 @@ export const MainDisplay = ({})=>(
                         </h4>
                     {/*</div>*/}
                     <table className="table">
-                        <tr>
-                            <th>
-                                Subtotal
-                            </th>
-                            <td>
-                                ${225.00}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Shipping
-                            </th>
-                            <td>
-                                ${17.95}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Tax
-                            </th>
-                            <td>
-                                ${19.95}
-                            </td>
-                        </tr>
-                        <tr className="total-tr">
-                            <th>
-                                Total
-                            </th>
-                            <td>
-                                ${350.99}
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Subtotal
+                                </th>
+                                <td>
+                                    ${225.00}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Shipping
+                                </th>
+                                <td>
+                                    ${17.95}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Tax
+                                </th>
+                                <td>
+                                    ${19.95}
+                                </td>
+                            </tr>
+                            <tr className="total-tr">
+                                <th>
+                                    Total
+                                </th>
+                                <td>
+                                    ${350.99}
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </section>
             </section>

@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable'
 export const defaultState = fromJS({
-    currentUser:"U10000",
+    currentUser:null,
     cartItems:[],
     users:[],
     items:[],
