@@ -11,12 +11,13 @@ import {
     itemsDetailSelector
 } from './../../selectors'
 
-const mapStateToProps = (state,{id, quantity}) => {
-    console.log("An item container",id,quantity);
+const mapStateToProps = (state,{id}) => {
     const details = itemsDetailSelector(state);
     console.log("Details?",details.toJS());
+    const detail = details.find(detail=>detail.id === id);
     return {
-        
+        fetched: detail !== undefined,
+        ... detail
     }
 };
 const mapDispatchToProps = (dispatch) => ({
