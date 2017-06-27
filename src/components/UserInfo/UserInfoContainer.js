@@ -9,7 +9,6 @@ import {
 
 const mapStateToProps = (state) => {
     const user = currentUserSelector(state);
-    console.log("User?",user);
     return user ? {
         ...user.toJS(),
         fetched:true

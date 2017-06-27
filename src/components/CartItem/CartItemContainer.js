@@ -8,18 +8,22 @@ import {
 } from './../../actions'
 
 import {
-    itemsDetailSelector
+    itemsDetailSelector,
+    itemPriceSelector,
+    itemPricesSelector
 } from './../../selectors'
 
 const mapStateToProps = (state,{id}) => {
     const details = itemsDetailSelector(state);
-    console.log("Details?",details.toJS());
     const detail = details.find(detail=>detail.id === id);
+    const price = itemPriceSelector(id)(state);
     return {
         fetched: detail !== undefined,
+        price,
         ... detail
     }
 };
+
 const mapDispatchToProps = (dispatch) => ({
     
 });

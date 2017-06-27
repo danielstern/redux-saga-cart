@@ -4,7 +4,7 @@ export const CartItemListDisplay = ({items, fetched})=>(
     <div>
     {fetched ? <div>
             {items.map(item=>(
-                <CartItemContainer {...item} key={item.id}/>
+                <CartItemContainer {...item.toJS()} key={item.get(`id`)}/>
             ))}
         </div> :
         <div>
