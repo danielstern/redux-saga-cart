@@ -4,3 +4,5 @@ export { getCurrentUserInfo , GET_CURRENT_USER_INFO } from './getCurrentUserInfo
 export { setCartItems , SET_CART_ITEMS } from './setCartItems';
 export { setItemDetails , SET_ITEM_DETAILS } from './setItemDetails';
 export { setItemPrice , SET_ITEM_PRICE } from './setItemPrice';
+export { increaseItemQuantity , INCREASE_ITEM_QUANTITY } from './increaseItemQuantity';
+export { decreaseItemQuantity , DECREASE_ITEM_QUANTITY } from './decreaseItemQuantity';

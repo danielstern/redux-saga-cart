@@ -4,7 +4,8 @@ import {
 } from './CartItemDisplay';
 
 import {
-    
+    increaseItemQuantity,
+    decreaseItemQuantity
 } from './../../actions'
 
 import {
@@ -25,7 +26,12 @@ const mapStateToProps = (state,{id}) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    
+    increaseItemQuantity(id){
+        dispatch(increaseItemQuantity(id));
+    },
+    decreaseItemQuantity(id){
+        dispatch(decreaseItemQuantity(id));
+    }
 });
 
 export const CartItemContainer = connect(
