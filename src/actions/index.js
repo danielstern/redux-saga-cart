@@ -9,3 +9,4 @@ export { decreaseItemQuantity , DECREASE_ITEM_QUANTITY } from './decreaseItemQua
 export { setItemQuantityFetchStatus , SET_ITEM_QUANTITY_FETCH_STATUS, FETCHED, FETCHING } from './setItemQuantityFetchStatus';
 export { setShippingFetchStatus , SET_SHIPPING_FETCH_STATUS } from './setShippingFetchStatus';
 export { setShippingCost , SET_SHIPPING_COST } from './setShippingCost';
+export { setTaxRate , SET_TAX_RATE } from './setTaxRate';

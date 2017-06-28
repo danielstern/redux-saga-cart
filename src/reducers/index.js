@@ -6,3 +6,4 @@ export { itemPrices } from './itemPrices';
 export { itemQuantityFetchStatus } from './itemQuantityFetchStatus';
 export { shippingCost } from './shippingCost';
 export { shippingFetchStatus } from './shippingFetchStatus';
+export { taxRate } from './taxRate';
