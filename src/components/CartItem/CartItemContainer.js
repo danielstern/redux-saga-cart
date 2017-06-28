@@ -11,15 +11,17 @@ import {
 import {
     itemsDetailSelector,
     itemPriceSelector,
-    itemPricesSelector
+    itemQuantityFetchStatusSelector
 } from './../../selectors'
 
 const mapStateToProps = (state,{id}) => {
     const details = itemsDetailSelector(state);
     const detail = details.find(detail=>detail.id === id);
     const price = itemPriceSelector(id)(state);
+    const quantityFetchStatus = itemQuantityFetchStatusSelector(state);
     return {
         fetched: detail !== undefined,
+        quantityFetchStatus,
         price,
         ... detail
     }

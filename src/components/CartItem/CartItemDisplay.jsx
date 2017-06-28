@@ -1,5 +1,8 @@
 import React from 'react'
-export const CartItemDisplay = ({fetched,name,description,price, id, quantity, increaseItemQuantity, decreaseItemQuantity})=>(
+import {
+    FETCHED
+} from '../../actions'
+export const CartItemDisplay = ({fetched,name,description,price, id, quantity, increaseItemQuantity, decreaseItemQuantity, quantityFetchStatus})=>(
     <div>
         {fetched ?
         <div>
@@ -22,8 +25,8 @@ export const CartItemDisplay = ({fetched,name,description,price, id, quantity, i
                 <span className="item-quantity">
                     Quantity: {quantity}
                 </span>
-                <button className="btn btn-secondary" onClick={()=>decreaseItemQuantity(id)}>-</button>
-                <button className="btn btn-secondary" onClick={()=>increaseItemQuantity(id)}>+</button>
+                <button className="btn btn-secondary" disabled={quantityFetchStatus !== FETCHED} onClick={()=>decreaseItemQuantity(id)}>-</button>
+                <button className="btn btn-secondary" disabled={quantityFetchStatus !== FETCHED} onClick={()=>increaseItemQuantity(id)}>+</button>
             </section>
         </div> : <div>
             ... Fetching item info

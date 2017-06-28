@@ -6,3 +6,4 @@ export { setItemDetails , SET_ITEM_DETAILS } from './setItemDetails';
 export { setItemPrice , SET_ITEM_PRICE } from './setItemPrice';
 export { increaseItemQuantity , INCREASE_ITEM_QUANTITY } from './increaseItemQuantity';
 export { decreaseItemQuantity , DECREASE_ITEM_QUANTITY } from './decreaseItemQuantity';
+export { setItemQuantityFetchStatus , SET_ITEM_QUANTITY_FETCH_STATUS, FETCHED, FETCHING } from './setItemQuantityFetchStatus';
