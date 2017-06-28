@@ -41,6 +41,7 @@ const mapStateToProps = (state) => {
 
     const totalTax = (subtotal + shippingCost) * taxRate;
     const totalTaxFetched = taxRateFetched && shippingFetched && subtotalFetched;
+    const total = totalTaxFetched ? subtotal + shippingCost + totalTax : null;
 
     return {
         subtotalFetched,
@@ -50,7 +51,8 @@ const mapStateToProps = (state) => {
         taxRate,
         taxRateFetched,
         totalTax,
-        totalTaxFetched
+        totalTaxFetched,
+        total
     }
 };
 const mapDispatchToProps = (dispatch) => ({
