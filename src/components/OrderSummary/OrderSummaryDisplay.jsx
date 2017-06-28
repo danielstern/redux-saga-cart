@@ -1,6 +1,6 @@
 import React from 'react'
 import { formatCurrency } from '../../utility'
-export const OrderSummaryDisplay = ({subtotal, subtotalFetched})=>(
+export const OrderSummaryDisplay = ({subtotal, subtotalFetched, shippingFetched, shippingCost})=>(
         <section className="col-6">
             <div className="text-center checkout-button-container">
                 <button className="btn btn-primary btn-lg">
@@ -18,7 +18,7 @@ export const OrderSummaryDisplay = ({subtotal, subtotalFetched})=>(
                             Subtotal
                         </th>
                         <td>
-                            {subtotalFetched ? formatCurrency(subtotal) : <div className="loader"></div>}
+                            {subtotalFetched ? formatCurrency(subtotal) : <div className="loader" />}
                         </td>
                     </tr>
                     <tr>
@@ -26,7 +26,7 @@ export const OrderSummaryDisplay = ({subtotal, subtotalFetched})=>(
                             Shipping
                         </th>
                         <td>
-                            ${17.95}
+                            {shippingFetched ? formatCurrency(shippingCost) : <div className="loader" />}
                         </td>
                     </tr>
                     <tr>

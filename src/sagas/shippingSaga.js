@@ -34,10 +34,10 @@ function* shipping() {
 export function* shippingSaga() {
     let task;
     while (true) {
+        yield take([SET_CART_ITEMS, INCREASE_ITEM_QUANTITY, DECREASE_ITEM_QUANTITY]);
         if (task) {
             yield cancel(task);
         }
-        yield take([SET_CART_ITEMS, INCREASE_ITEM_QUANTITY, DECREASE_ITEM_QUANTITY]);
         task = yield fork(shipping);
     }
 }

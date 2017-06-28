@@ -4,18 +4,22 @@ import {
 } from './OrderSummaryDisplay';
 
 import {
-    
+    FETCHED
 } from './../../actions'
 
 import {
     cartItemsSelector,
     itemPricesSelector,
-    itemPriceSelector
+    itemPriceSelector,
+    shippingCostSelector,
+    shippingFetchStatusSelector
 } from './../../selectors'
 
 const mapStateToProps = (state) => {
     console.log("Todo... calc tax...");
     const items = cartItemsSelector(state);
+    const shippingFetched = shippingFetchStatusSelector(state) === FETCHED;
+    const shippingCost = shippingCostSelector(state);
     // const prices = itemPricesSelector(state);
     let subtotalFetched = true;
     let subtotal = 0;
@@ -38,7 +42,9 @@ const mapStateToProps = (state) => {
     console.log("Total?",subtotal);
     return {
         subtotalFetched,
-        subtotal
+        subtotal,
+        shippingCost,
+        shippingFetched
     }
 };
 const mapDispatchToProps = (dispatch) => ({
