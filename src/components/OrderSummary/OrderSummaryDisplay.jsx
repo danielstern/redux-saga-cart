@@ -8,11 +8,9 @@ export const OrderSummaryDisplay = ({subtotal, subtotalFetched})=>(
                 </button>
             </div>
             <section>
-                {/*<div className="text-center">*/}
                 <h4>
                     Order Summary
                 </h4>
-                {/*</div>*/}
                 <table className="table">
                     <tbody>
                     <tr>

@@ -27,10 +27,8 @@ const mapStateToProps = (state) => {
             const quantity = item.get('quantity');
             const price = itemPriceSelector(id)(state);
             if (!price) {
-                console.warn(`No price found for item`, id);
                 subtotalFetched = false;
             } else {
-                console.log("Got price",price);
                 total += price * quantity;
             }
             return total;

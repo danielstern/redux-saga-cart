@@ -28,8 +28,6 @@ export const CartItemDisplay = ({fetched,name,description,price, id, quantity, i
                 <button className="btn btn-secondary" disabled={quantityFetchStatus !== FETCHED} onClick={()=>decreaseItemQuantity(id)}>-</button>
                 <button className="btn btn-secondary" disabled={quantityFetchStatus !== FETCHED} onClick={()=>increaseItemQuantity(id)}>+</button>
             </section>
-        </div> : <div>
-            ... Fetching item info
-        </div>}
+        </div> : <div className="loader"></div>}
     </div>
 );

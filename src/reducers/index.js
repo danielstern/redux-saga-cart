@@ -4,3 +4,5 @@ export { cartItems } from './cartItems';
 export { items } from './items';
 export { itemPrices } from './itemPrices';
 export { itemQuantityFetchStatus } from './itemQuantityFetchStatus';
+export { shippingCost } from './shippingCost';
+export { shippingFetchStatus } from './shippingFetchStatus';
