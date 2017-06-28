@@ -5,9 +5,9 @@ export const itemPricesSelector = createSelector(
 );
 
 export const itemPriceSelector = (id) => (state) => {
-    const entry = itemPricesSelector(state).find(item=>item.id === id);
+    const entry = itemPricesSelector(state).find(item=>item.get(`id`) === id);
     if (entry) {
-        return entry.price;
+        return entry.get(`price`);
     } else {
         return null;
     }

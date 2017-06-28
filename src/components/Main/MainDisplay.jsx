@@ -1,6 +1,7 @@
 import React from 'react'
 import { UserInfoContainer } from '../UserInfo'
 import { CartItemListContainer } from '../CartItemList'
+import { OrderSummaryContainer } from '../OrderSummary'
 export const MainDisplay = ({})=>(
     <div>
         <section className="row">
@@ -44,56 +45,57 @@ export const MainDisplay = ({})=>(
                     {/*</section>*/}
                 </section>
             </section>
-            <section className="col-6">
-                <div className="text-center checkout-button-container">
-                    <button className="btn btn-primary btn-lg">
-                        Check Out
-                    </button>
-                </div>
-                <section>
-                    {/*<div className="text-center">*/}
-                        <h4>
-                            Order Summary
-                        </h4>
-                    {/*</div>*/}
-                    <table className="table">
-                        <tbody>
-                            <tr>
-                                <th>
-                                    Subtotal
-                                </th>
-                                <td>
-                                    ${225.00}
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Shipping
-                                </th>
-                                <td>
-                                    ${17.95}
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Tax
-                                </th>
-                                <td>
-                                    ${19.95}
-                                </td>
-                            </tr>
-                            <tr className="total-tr">
-                                <th>
-                                    Total
-                                </th>
-                                <td>
-                                    ${350.99}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </section>
+            <OrderSummaryContainer />
+            {/*<section className="col-6">*/}
+                {/*<div className="text-center checkout-button-container">*/}
+                    {/*<button className="btn btn-primary btn-lg">*/}
+                        {/*Check Out*/}
+                    {/*</button>*/}
+                {/*</div>*/}
+                {/*<section>*/}
+                    {/*/!*<div className="text-center">*!/*/}
+                        {/*<h4>*/}
+                            {/*Order Summary*/}
+                        {/*</h4>*/}
+                    {/*/!*</div>*!/*/}
+                    {/*<table className="table">*/}
+                        {/*<tbody>*/}
+                            {/*<tr>*/}
+                                {/*<th>*/}
+                                    {/*Subtotal*/}
+                                {/*</th>*/}
+                                {/*<td>*/}
+                                    {/*${225.00}*/}
+                                {/*</td>*/}
+                            {/*</tr>*/}
+                            {/*<tr>*/}
+                                {/*<th>*/}
+                                    {/*Shipping*/}
+                                {/*</th>*/}
+                                {/*<td>*/}
+                                    {/*${17.95}*/}
+                                {/*</td>*/}
+                            {/*</tr>*/}
+                            {/*<tr>*/}
+                                {/*<th>*/}
+                                    {/*Tax*/}
+                                {/*</th>*/}
+                                {/*<td>*/}
+                                    {/*${19.95}*/}
+                                {/*</td>*/}
+                            {/*</tr>*/}
+                            {/*<tr className="total-tr">*/}
+                                {/*<th>*/}
+                                    {/*Total*/}
+                                {/*</th>*/}
+                                {/*<td>*/}
+                                    {/*${350.99}*/}
+                                {/*</td>*/}
+                            {/*</tr>*/}
+                        {/*</tbody>*/}
+                    {/*</table>*/}
+                {/*</section>*/}
+            {/*</section>*/}
         </section>
     </div>
 );
