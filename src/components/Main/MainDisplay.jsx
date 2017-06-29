@@ -1,9 +1,10 @@
 import React from 'react'
 import { CartManageViewContainer } from '../CartManageView'
+import { CheckoutStatusViewContainer } from '../CheckoutStatusView'
 export const MainDisplay = ({isCheckingOut})=>(
     <div>
         {isCheckingOut ? <div>
-            You are now checking out...
+            <CheckoutStatusViewContainer/>
         </div> : <div>
             <CartManageViewContainer/>
         </div>}

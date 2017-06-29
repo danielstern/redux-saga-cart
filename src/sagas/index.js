@@ -7,3 +7,4 @@ export { shippingSaga } from './shippingSaga';
 export { taxRateSaga } from './taxRateSaga';
 export { checkoutAvailabilitySaga } from './checkoutAvailabilitySaga';
 export { customerServiceAvailabilitySaga } from './customerServiceAvailabilitySaga';
+export { checkoutSaga } from './checkoutSaga';

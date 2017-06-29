@@ -7,3 +7,4 @@ export { OrderSummaryContainer } from './OrderSummary/';
 export { CheckoutButtonContainer } from './CheckoutButton/';
 export { CartManageViewContainer } from './CartManageView/';
 export { SupportAvailableContainer } from './SupportAvailable/';
+export { CheckoutStatusViewContainer } from './CheckoutStatusView/';

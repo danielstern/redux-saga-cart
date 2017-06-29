@@ -13,3 +13,4 @@ export { setTaxRate , SET_TAX_RATE } from './setTaxRate';
 export { toggleCheckingOut , TOGGLE_CHECKING_OUT } from './toggleCheckingOut';
 export { setCanCheckOut , SET_CAN_CHECK_OUT } from './setCanCheckOut';
 export { setCustomerServiceAvailability , SET_CUSTOMER_SERVICE_AVAILABILITY } from './setCustomerServiceAvailability';
+export { setCheckoutPhase , SET_CHECKOUT_PHASE, CREDIT_VALIDATION_CHECKOUT_PHASE, PURCHASE_FINALIZATION_CHECKOUT_PHASE, QUANTITY_VERIFICATION_CHECKOUT_PHASE } from './setCheckoutPhase';

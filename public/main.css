@@ -46,6 +46,12 @@ td {
     width: 2em;
     height: 2em;
     animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+.loader.xl {
+    width: 4em;
+    height: 4em;
 }
 
 @keyframes spin {
