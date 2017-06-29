@@ -10,3 +10,5 @@ export { setItemQuantityFetchStatus , SET_ITEM_QUANTITY_FETCH_STATUS, FETCHED, F
 export { setShippingFetchStatus , SET_SHIPPING_FETCH_STATUS } from './setShippingFetchStatus';
 export { setShippingCost , SET_SHIPPING_COST } from './setShippingCost';
 export { setTaxRate , SET_TAX_RATE } from './setTaxRate';
+export { toggleCheckingOut , TOGGLE_CHECKING_OUT } from './toggleCheckingOut';
+export { setCanCheckOut , SET_CAN_CHECK_OUT } from './setCanCheckOut';

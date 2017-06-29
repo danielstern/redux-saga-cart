@@ -1,4 +1,5 @@
 import React from 'react'
+import { CheckoutButtonContainer } from '../CheckoutButton'
 import { formatCurrency } from '../../utility'
 export const OrderSummaryDisplay = ({
     subtotal,
@@ -10,12 +11,9 @@ export const OrderSummaryDisplay = ({
     total
 })=>(
     <section className="col-6">
-        <div className="text-center checkout-button-container">
-            <button className="btn btn-primary btn-lg">
-                Check Out
-            </button>
-        </div>
+
         <section>
+            <CheckoutButtonContainer/>
             <h4>
                 Order Summary
             </h4>

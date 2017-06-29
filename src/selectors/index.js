@@ -6,3 +6,5 @@ export { itemQuantityFetchStatusSelector } from './itemQuantityFetchStatusSelect
 export { shippingCostSelector } from './shippingCostSelector';
 export { shippingFetchStatusSelector } from './shippingFetchStatusSelector';
 export { taxRateSelector } from './taxRateSelector';
+export { isCheckingOutSelector } from './isCheckingOutSelector';
+export { canCheckOutSelector } from './canCheckOutSelector';
