@@ -2,6 +2,7 @@ import React from 'react'
 import { UserInfoContainer } from '../UserInfo'
 import { CartItemListContainer } from '../CartItemList'
 import { OrderSummaryContainer } from '../OrderSummary'
+import { SupportAvailableContainer } from '../SupportAvailable'
 export const CartManageViewDisplay = ({})=>(
     <div>
         <section className="row">
@@ -24,6 +25,9 @@ export const CartManageViewDisplay = ({})=>(
                 </section>
             </section>
             <OrderSummaryContainer />
+        </section>
+        <section>
+            <SupportAvailableContainer/>
         </section>
     </div>
 );

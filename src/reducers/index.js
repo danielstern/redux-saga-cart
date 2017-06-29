@@ -9,3 +9,4 @@ export { shippingFetchStatus } from './shippingFetchStatus';
 export { taxRate } from './taxRate';
 export { isCheckingOut } from './isCheckingOut';
 export { canCheckOut } from './canCheckOut';
+export { customerServiceAvailability } from './customerServiceAvailability';

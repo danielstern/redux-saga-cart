@@ -8,3 +8,4 @@ export { shippingFetchStatusSelector } from './shippingFetchStatusSelector';
 export { taxRateSelector } from './taxRateSelector';
 export { isCheckingOutSelector } from './isCheckingOutSelector';
 export { canCheckOutSelector } from './canCheckOutSelector';
+export { customerServiceAvailabilitySelector } from './customerServiceAvailabilitySelector';

@@ -18,13 +18,15 @@ import {
 function* shipping() {
     yield put(setShippingFetchStatus(FETCHING));
     const items = yield select(cartItemsSelector);
-    console.log("shipping",items);
+
+    // Turn all the item IDs into an API compatible string, and trim the last comma
     const itemRequestString = items.reduce((string,item)=>{
         for (let i = 0; i < item.get(`quantity`); i++) {
             string += item.get(`id`) + ",";
         }
         return string;
     },"").replace(/,\s*$/, '');
+
     const response = yield fetch(`http://localhost:8081/shipping/${itemRequestString}`);
     const { total } = yield response.json();
     yield put(setShippingCost(total));

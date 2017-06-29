@@ -18,7 +18,6 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => ({
     handleRequestCheckout(){
-        console.log("Checking uot");
         dispatch(toggleCheckingOut(true));
     }
 });

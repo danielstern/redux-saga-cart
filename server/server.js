@@ -28,7 +28,11 @@ const io = socketIO(server);
 
 
 io.on('connection',(connection)=>{
-    console.log("Connected");
+    let supportAvailable = false;
+    setInterval(()=>{
+        supportAvailable = !supportAvailable;
+        connection.emit(supportAvailable ? `SUPPORT_AVAILABLE` : `SUPPORT_NOT_AVAILABLE`);
+    },10000);
 });
 
 app.use(express.static('public'));
