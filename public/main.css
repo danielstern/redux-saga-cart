@@ -40,8 +40,8 @@ td {
 }
 
 .loader {
-    border: 1em solid #999;
-    border-top: 1em solid #fff;
+    border: 0.3em solid #025aa5;
+    border-top: 0.3em solid #fff;
     border-radius: 50%;
     width: 2em;
     height: 2em;

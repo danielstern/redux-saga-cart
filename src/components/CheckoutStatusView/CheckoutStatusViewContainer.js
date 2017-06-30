@@ -3,9 +3,13 @@ import {
     CheckoutStatusViewDisplay
 } from './CheckoutStatusViewDisplay';
 
+import {
+    checkoutPhaseSelector
+} from '../../selectors'
+
 const mapStateToProps = (state) => {
     return {
-        
+        phase:checkoutPhaseSelector(state)
     }
 };
 const mapDispatchToProps = (dispatch) => ({

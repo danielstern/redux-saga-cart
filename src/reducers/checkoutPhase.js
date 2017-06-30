@@ -1,6 +1,9 @@
 import { createReducer } from './../utility';
-export const checkoutPhase = createReducer(0, {
-    ["ACTION_NAME"](state,action) {
-        return state;
+import {
+    SET_CHECKOUT_PHASE
+} from '../actions'
+export const checkoutPhase = createReducer(null, {
+    [SET_CHECKOUT_PHASE](state,{phase}) {
+        return phase;
     }
 });
