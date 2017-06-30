@@ -42,5 +42,5 @@ Make sure you're running the latest version of `node`. Make sure the following d
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.17.1",
     "webpack-dev-server": "^1.16.5"
- }
-    ```
+}
+```
