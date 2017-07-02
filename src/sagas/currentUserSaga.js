@@ -1,4 +1,4 @@
-import { take, put } from 'redux-saga/effects'
+import { take, put, call  } from 'redux-saga/effects'
 import fetch from 'isomorphic-fetch';
 
 import {
@@ -8,7 +8,8 @@ import {
 
 export function* currentUserSaga() {
     const { id } = yield take(GET_CURRENT_USER_INFO);
-    const response = yield fetch(`http://localhost:8081/user/${id}`);
-    const data = yield response.json();
+    // const response = yield fetch(`http://localhost:8081/user/${id}`);
+    const response = yield call(fetch,`http://localhost:8081/user/${id}`);
+    const data = yield call(response.json);
     yield put(setCurrentUser(data));
 }
