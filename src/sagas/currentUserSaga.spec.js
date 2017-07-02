@@ -1,11 +1,12 @@
-import { currentUserSaga } from './currentUserSaga'
+import fetch from 'isomorphic-fetch';
 import { take, call, put, apply } from 'redux-saga/effects'
+
+import { currentUserSaga } from './currentUserSaga'
 import {
     GET_CURRENT_USER_INFO,
     setCurrentUser
 } from './../actions'
 
-import fetch from 'isomorphic-fetch';
 describe("The app",()=>{
     test("The test",()=>{
         const id = `NCC1701`;
