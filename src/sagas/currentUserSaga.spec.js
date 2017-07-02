@@ -7,8 +7,8 @@ import {
     setCurrentUser
 } from './../actions'
 
-describe("The app",()=>{
-    test("The test",()=>{
+describe("The current user saga",()=>{
+    test("It fetches and puts the current user's data",()=>{
         const id = `NCC1701`;
         const user = {name:"Jean Luc"};
         const json = ()=>{};

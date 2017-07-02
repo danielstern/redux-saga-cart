@@ -1,4 +1,4 @@
-import { takeEvery, take, put } from 'redux-saga/effects'
+import {  take, put } from 'redux-saga/effects'
 import { eventChannel } from 'redux-saga'
 import { connect } from '../createSocketConnection'
 import {
