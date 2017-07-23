@@ -6,7 +6,6 @@ import {
 
 import { createLogger } from 'redux-logger';
 import { Iterable } from 'immutable'
-import createSagaMiddleware from 'redux-saga';
 import thunk from 'redux-thunk'
 
 import { getQuery } from './utility'
@@ -23,8 +22,7 @@ const logger = createLogger({
 });
 
 export const getStore = ()=>{
-    const sagaMiddleware = createSagaMiddleware();
-    const middleWares = [sagaMiddleware,thunk];
+    const middleWares = [thunk];
     if (getQuery()['logger']) { middleWares.push(logger)}
     const composables = [applyMiddleware(...middleWares)]
     const enhancer = compose(
