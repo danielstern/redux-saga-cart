@@ -1,4 +1,4 @@
-import { cancel, select, put, take, fork } from 'redux-saga/effects'
+import { select, put, takeLatest } from 'redux-saga/effects'
 import fetch from 'isomorphic-fetch';
 
 import {
@@ -34,12 +34,5 @@ function* shipping() {
 }
 
 export function* shippingSaga() {
-    let task;
-    while (true) {
-        yield take([SET_CART_ITEMS, INCREASE_ITEM_QUANTITY, DECREASE_ITEM_QUANTITY]);
-        if (task) {
-            yield cancel(task);
-        }
-        task = yield fork(shipping);
-    }
+    yield takeLatest([SET_CART_ITEMS, INCREASE_ITEM_QUANTITY, DECREASE_ITEM_QUANTITY], shipping);
 }
