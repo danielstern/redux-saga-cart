@@ -39,6 +39,7 @@
     "webpack-hot-middleware": "^2.17.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "chai": "^4.0.2",
     "jest": "^20.0.4",
     "mocha": "^3.4.2",
