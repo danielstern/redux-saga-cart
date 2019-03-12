@@ -7,4 +7,5 @@ export const defaultState = fromJS({
     itemPrices:[],
     taxRates:[],
     shippingTotal:0,
+    colors: []
 });
