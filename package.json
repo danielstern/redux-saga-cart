@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-plugin-transform-object-rest-spread": "^6.19.0",

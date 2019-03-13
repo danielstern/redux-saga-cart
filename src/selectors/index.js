@@ -10,3 +10,4 @@ export { isCheckingOutSelector } from './isCheckingOutSelector';
 export { canCheckOutSelector } from './canCheckOutSelector';
 export { customerServiceAvailabilitySelector } from './customerServiceAvailabilitySelector';
 export { checkoutPhaseSelector } from './checkoutPhaseSelector';
+export { colorsSelector } from './colorsSelector';

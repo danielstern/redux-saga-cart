@@ -2,6 +2,7 @@ export { version } from './version';
 export { currentUser } from './currentUser';
 export { cartItems } from './cartItems';
 export { items } from './items';
+export { colors } from './colors';
 export { itemPrices } from './itemPrices';
 export { itemQuantityFetchStatus } from './itemQuantityFetchStatus';
 export { shippingCost } from './shippingCost';

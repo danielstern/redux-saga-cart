@@ -8,12 +8,14 @@ import {
 } from './../../actions'
 
 import {
-    customerServiceAvailabilitySelector
+    customerServiceAvailabilitySelector, 
+    colorsSelector
 } from './../../selectors'
 
 const mapStateToProps = (state) => {
     return {
-        isAvailable:customerServiceAvailabilitySelector(state)
+        isAvailable:customerServiceAvailabilitySelector(state),
+        colors:colorsSelector(state)
     }
 };
 const mapDispatchToProps = (dispatch) => ({
