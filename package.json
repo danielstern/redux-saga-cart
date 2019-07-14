@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "babel-node server/server.js"
+    "start": "npx babel-node server/server.js"
   },
   "keywords": [],
   "author": "",
