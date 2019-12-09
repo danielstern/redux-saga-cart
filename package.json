@@ -1,7 +1,10 @@
 {
   "name": "redux-saga-cart",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
