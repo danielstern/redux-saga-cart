@@ -10,7 +10,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
+            presets: [['@babel/preset-env', { useBuiltIns: 'entry', corejs: 2 }], '@babel/preset-react'],
             plugins: ['@babel/plugin-proposal-object-rest-spread']
           }
         }
@@ -36,7 +36,7 @@ module.exports = {
   ],
   entry: {
     index: [
-      // 'babel-regenerator-runtime',
+      '@babel/polyfill',
       'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
       './'
     ]
